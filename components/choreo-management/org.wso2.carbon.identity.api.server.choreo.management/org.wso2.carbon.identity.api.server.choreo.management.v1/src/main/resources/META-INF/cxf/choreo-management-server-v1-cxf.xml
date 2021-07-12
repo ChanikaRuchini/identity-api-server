@@ -1,0 +1,9 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="org.wso2.carbon.identity.api.server.choreo.management.v1.core.ChoreoConfigurationManagemenetService"/>
+    <bean class="org.wso2.carbon.identity.api.server.choreo.management.v1.impl.ChoreoConfigurationsApiServiceImpl"/>
+    <bean id="configurationManagerFactoryBean" class="org.wso2.carbon.identity.api.server.choreo.management.common.factory.ConfigurationMgtOSGiServiceFactory"/>
+    <bean id="ChoreoConfigurationServiceImplDataHolderBean" class="org.wso2.carbon.identity.api.server.choreo.management.common.ChoreoConfigurationManagementDataHolder">
+        <property name="choreoConfigurationConfigManager" ref="configurationManagerFactoryBean"/>
+    </bean>
+</beans>

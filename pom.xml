@@ -588,6 +588,7 @@
         <module>components/org.wso2.carbon.identity.api.server.cors</module>
         <module>components/org.wso2.carbon.identity.api.server.fetch.remote</module>
         <module>components/org.wso2.carbon.identity.api.server.notification.sender</module>
+        <module>components/choreo-management</module>
     </modules>
 
 </project>
